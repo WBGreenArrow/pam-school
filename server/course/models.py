@@ -8,3 +8,6 @@ class Course(models.Model):
     name = models.CharField(max_length=120)
     description = models.CharField(max_length=255)
     created_at = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
